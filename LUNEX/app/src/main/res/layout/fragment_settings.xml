@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lunex_background"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <Space
+            android:id="@+id/settings_top_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/edit_nickname_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/lunex_muted"
+            android:text="@string/settings_nickname_text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/nickname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:background="@drawable/lunex_input"
+            android:padding="12dp"
+            android:textColor="@color/lunex_text"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:id="@+id/settings_nickname_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/edit_ping_timeout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/lunex_muted"
+            android:text="@string/settings_ping_timeout_text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ping_timeout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:background="@drawable/lunex_input"
+            android:padding="12dp"
+            android:textColor="@color/lunex_text"
+            android:inputType="number" />
+
+        <Space
+            android:id="@+id/settings_ping_timeout_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <com.umnicode.samp_launcher.ui.widgets.SAMP_InstallerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

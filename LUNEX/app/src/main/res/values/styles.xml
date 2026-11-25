@@ -1,0 +1,27 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/lunex_background</item>
+        <item name="android:navigationBarColor">@color/lunex_background</item>
+        <item name="android:windowBackground">@color/lunex_background</item>
+        <item name="android:textColorPrimary">@color/lunex_text</item>
+        <item name="android:textColorSecondary">@color/lunex_muted</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/LunexTextViewStyle</item>
+        <item name="bottomNavigationStyle">@style/LunexBottomNavigation</item>
+    </style>
+    <style name="LunexTextViewStyle">
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textColor">@color/lunex_text</item>
+    </style>
+    <style name="LunexBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">@color/lunex_surface</item>
+        <item name="itemIconTint">@color/colorAccent</item>
+        <item name="itemTextColor">@color/lunex_muted</item>
+    </style>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lunex_background"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="- Nickname -"
+        android:textColor="@color/lunex_text"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/lunex_muted"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname" />
+
+    <com.umnicode.samp_launcher.core.ServerView
+        android:id="@+id/server_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/lunex_panel"
+        android:padding="14dp"
+        app:layout_constraintBottom_toTopOf="@id/help"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/help_string"
+        android:textColor="@color/lunex_muted"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/ip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/lunex_input"
+        android:gravity="center_vertical"
+        android:hint="@string/server_ip_hint"
+        android:inputType="textUri"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lunex_text"
+        android:textColorHint="@color/lunex_muted"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/port"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/lunex_input"
+        android:gravity="center_vertical"
+        android:hint="@string/server_port_hint"
+        android:inputType="number"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lunex_text"
+        android:textColorHint="@color/lunex_muted"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/lunex_input"
+        android:gravity="center_vertical"
+        android:hint="@string/server_password_hint"
+        android:inputType="textPassword"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lunex_text"
+        android:textColorHint="@color/lunex_muted"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/add_server_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_server_btn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/lunex_surface_alt"
+        android:text="@string/add_server_button"
+        android:textAllCaps="false"
+        android:textColor="@color/lunex_text"
+        app:layout_constraintBottom_toTopOf="@id/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.umnicode.samp_launcher.ui.widgets.playbutton.PlayButton
+        android:id="@+id/play_btn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/lato"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

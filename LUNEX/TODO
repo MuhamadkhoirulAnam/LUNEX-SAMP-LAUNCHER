@@ -1,0 +1,8 @@
+LUNEX follow-up tasks
+=====================
+
+- Implement and verify the real SA-MP client launch intent/package contract.
+- Implement the Server List screen and connect add/remove/edit actions to UserConfig.
+- Replace or maintain the upstream server information endpoint and validate its availability.
+- Review installer download sources, archive integrity, Android storage compatibility, and package install flow.
+- Add automated tests for server input validation, JSON parsing, and preference persistence.
